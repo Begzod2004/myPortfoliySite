@@ -30,14 +30,6 @@ class MyResume(models.Model):
         return str(self.file)
 
 
-class ProjectCategory(models.Model):
-    name = models.CharField(max_length=500,null=True,blank=False)
-
-
-    def __str__(self):
-        return self.name
-
-
 class MyProjects(models.Model):
 
     SIDE_CHOICES = (
@@ -45,7 +37,7 @@ class MyProjects(models.Model):
         ("right","right"),
     )
     
-    category    = models.ForeignKey(ProjectCategory,on_delete=models.CASCADE,null=True)
+    category    = models.CharField(max_length=123)
     side        = models.CharField(blank=False,null=True,choices=SIDE_CHOICES,max_length=5)
     image       = models.ImageField(null=True,blank=False)
     title       = models.CharField(max_length=27,null=True,blank=False)
@@ -74,6 +66,8 @@ class MySkills(models.Model):
 class MyWorkExprea(models.Model):
     name        = models.CharField(max_length=30,null=True,blank=False)
     image       = models.ImageField(null=True,blank=False)
+    start_date  = models.DateTimeField()
+    finish_date = models.DateTimeField()
     published   = models.DateTimeField(auto_now_add=True)
 
 
