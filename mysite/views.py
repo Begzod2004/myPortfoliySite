@@ -14,6 +14,39 @@ from rest_framework.parsers import FormParser, MultiPartParser
 
 
 
-class MahsulotlarViewSet(ModelViewSet):
-    queryset = Mahsulotlar.objects.all()
-    serializer_class = MahsulotlarSerializers
+class CommentViewSet(ModelViewSet):
+    queryset = Comments.objects.all()
+    serializer_class = CommentsSerializer
+
+
+class MyResumeViewSet(ModelViewSet):
+    queryset = MyResume.objects.all()
+    serializer_class = MyResumeSerializer
+
+    
+class MyprojectsViewSet(ModelViewSet):
+    queryset = MyProjects.objects.all()
+    serializer_class = MyProjectsSerializer
+
+    
+
+class MySkillsViewSet(ModelViewSet):
+    queryset = MySkills.objects.all()
+    serializer_class = MySkillsSerializer
+
+    
+
+
+class MyWorkExpreaViewSet(ModelViewSet):
+    queryset = MyWorkExprea.objects.all()
+    serializer_class = MyWorkExpreaSerializer
+
+    
+
+
+class GetInTouchViewSet(ModelViewSet):
+    queryset = GetInTouch.objects.all()
+    serializer_class = GetInTouchSerializer
+
+    
+

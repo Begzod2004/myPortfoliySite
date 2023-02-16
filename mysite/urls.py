@@ -9,23 +9,13 @@ from .views import *
 router = DefaultRouter()
 
 
-
-
-
-
 router = SimpleRouter()
-router.register('tranzaksiyaCategory', TranzaksiyaCategoryViewSet)
-router.register('moliya_kirim', Moliya_kirimViewSet)
-router.register('moliya_chiqim', Moliya_chiqimViewSet)
-# router.register('import', ImportViewSet)
-# router.register('export', ExportViewSet)
-router.register('mijoz', MijozViewSet)
-router.register('buyurtma', Buyurtma1ViewSet)
-router.register('hodim', HodimViewSet)
-router.register('mahsulotlar', MahsulotlarViewSet)
-router.register('bonus', BonusViewSet)
-router.register('mahsulot_olchov', Mahsulot_olchovViewSet)
-router.register('ombor', OmborViewSet)
+router.register('Comment', CommentViewSet)
+router.register('MyResume', MyResumeViewSet)
+router.register('MyprojectsViewSet', MyprojectsViewSet)
+router.register('MySkills', MySkillsViewSet)
+router.register('MyWorkExprea', MyWorkExpreaViewSet)
+router.register('GetInTouch', GetInTouchViewSet)
 
 
 
