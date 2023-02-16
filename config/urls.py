@@ -40,7 +40,7 @@ urlpatterns += [
     path('admin/', admin.site.urls),
 
     # local urls
-    path('myportfoliy/', include('mysite.api.urls')),
+    path('myportfoliy/', include('mysite.urls')),
 ]
 
 if settings.DEBUG:

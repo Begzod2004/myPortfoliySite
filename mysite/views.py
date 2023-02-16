@@ -4,7 +4,6 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 from .serializers import *
 from .models import *
-from . import query_params
 from rest_framework.response import Response
 from rest_framework import generics, status
 from rest_framework.parsers import FormParser, MultiPartParser
