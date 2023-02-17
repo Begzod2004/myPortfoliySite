@@ -273,10 +273,10 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    "welcome_sign": "S-orca Companyga xush kelibsiz!",
+    "welcome_sign": "This for BegzodDev adminstartors!",
 
     # Copyright on the footer
-    "copyright": "S-orca.uz",
+    "copyright": "BegzodDev.uz",
 
     # # The model admin to search from the search bar, search bar omitted if excluded
     # "search_model": "myprint.Product",
